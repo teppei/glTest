@@ -13,20 +13,21 @@
 		78704A57133C46AF00E866FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78704A56133C46AF00E866FF /* QuartzCore.framework */; };
 		78704A59133C46AF00E866FF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78704A58133C46AF00E866FF /* OpenGLES.framework */; };
 		78704A5F133C46AF00E866FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78704A5D133C46AF00E866FF /* InfoPlist.strings */; };
-		78704A62133C46AF00E866FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78704A61133C46AF00E866FF /* main.m */; };
-		78704A65133C46AF00E866FF /* glTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78704A64133C46AF00E866FF /* glTestAppDelegate.m */; };
+		78704A62133C46AF00E866FF /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78704A61133C46AF00E866FF /* main.mm */; };
+		78704A65133C46AF00E866FF /* glTestAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78704A64133C46AF00E866FF /* glTestAppDelegate.mm */; };
 		78704A68133C46AF00E866FF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78704A66133C46AF00E866FF /* MainWindow.xib */; };
 		78704A6A133C46B000E866FF /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 78704A69133C46B000E866FF /* Shader.fsh */; };
 		78704A6C133C46B100E866FF /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 78704A6B133C46B100E866FF /* Shader.vsh */; };
-		78704A6F133C46B100E866FF /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78704A6E133C46B100E866FF /* EAGLView.m */; };
-		78704A72133C46B100E866FF /* glTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78704A71133C46B100E866FF /* glTestViewController.m */; };
+		78704A6F133C46B100E866FF /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78704A6E133C46B100E866FF /* EAGLView.mm */; };
+		78704A72133C46B100E866FF /* glTestViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78704A71133C46B100E866FF /* glTestViewController.mm */; };
 		78704A75133C46B100E866FF /* glTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78704A73133C46B100E866FF /* glTestViewController.xib */; };
 		78704A7C133C46B100E866FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78704A50133C46AF00E866FF /* UIKit.framework */; };
 		78704A7D133C46B100E866FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78704A52133C46AF00E866FF /* Foundation.framework */; };
 		78704A7E133C46B100E866FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78704A54133C46AF00E866FF /* CoreGraphics.framework */; };
 		78704A86133C46B100E866FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78704A84133C46B100E866FF /* InfoPlist.strings */; };
 		78704A89133C46B100E866FF /* glTestTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 78704A88133C46B100E866FF /* glTestTests.h */; };
-		78704A8B133C46B100E866FF /* glTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78704A8A133C46B100E866FF /* glTestTests.m */; };
+		78704A8B133C46B100E866FF /* glTestTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78704A8A133C46B100E866FF /* glTestTests.mm */; };
+		78704A96133C79DD00E866FF /* graphicUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78704A94133C79DD00E866FF /* graphicUtil.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,26 +47,28 @@
 		78704A54133C46AF00E866FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		78704A56133C46AF00E866FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		78704A58133C46AF00E866FF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		78704A5C133C46AF00E866FF /* glTest-Info.plist */ = {isa = PBXFileReference; path = "glTest-Info.plist"; sourceTree = "<group>"; };
+		78704A5C133C46AF00E866FF /* glTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "glTest-Info.plist"; sourceTree = "<group>"; };
 		78704A5E133C46AF00E866FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		78704A60133C46AF00E866FF /* glTest-Prefix.pch */ = {isa = PBXFileReference; path = "glTest-Prefix.pch"; sourceTree = "<group>"; };
-		78704A61133C46AF00E866FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		78704A63133C46AF00E866FF /* glTestAppDelegate.h */ = {isa = PBXFileReference; path = glTestAppDelegate.h; sourceTree = "<group>"; };
-		78704A64133C46AF00E866FF /* glTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = glTestAppDelegate.m; sourceTree = "<group>"; };
+		78704A60133C46AF00E866FF /* glTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "glTest-Prefix.pch"; sourceTree = "<group>"; };
+		78704A61133C46AF00E866FF /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		78704A63133C46AF00E866FF /* glTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glTestAppDelegate.h; sourceTree = "<group>"; };
+		78704A64133C46AF00E866FF /* glTestAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = glTestAppDelegate.mm; sourceTree = "<group>"; };
 		78704A67133C46AF00E866FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		78704A69133C46B000E866FF /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		78704A6B133C46B100E866FF /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		78704A6D133C46B100E866FF /* EAGLView.h */ = {isa = PBXFileReference; path = EAGLView.h; sourceTree = "<group>"; };
-		78704A6E133C46B100E866FF /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
-		78704A70133C46B100E866FF /* glTestViewController.h */ = {isa = PBXFileReference; path = glTestViewController.h; sourceTree = "<group>"; };
-		78704A71133C46B100E866FF /* glTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = glTestViewController.m; sourceTree = "<group>"; };
+		78704A6D133C46B100E866FF /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		78704A6E133C46B100E866FF /* EAGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		78704A70133C46B100E866FF /* glTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glTestViewController.h; sourceTree = "<group>"; };
+		78704A71133C46B100E866FF /* glTestViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = glTestViewController.mm; sourceTree = "<group>"; };
 		78704A74133C46B100E866FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/glTestViewController.xib; sourceTree = "<group>"; };
 		78704A7B133C46B100E866FF /* glTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78704A83133C46B100E866FF /* glTestTests-Info.plist */ = {isa = PBXFileReference; path = "glTestTests-Info.plist"; sourceTree = "<group>"; };
+		78704A83133C46B100E866FF /* glTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "glTestTests-Info.plist"; sourceTree = "<group>"; };
 		78704A85133C46B100E866FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		78704A87133C46B100E866FF /* glTestTests-Prefix.pch */ = {isa = PBXFileReference; path = "glTestTests-Prefix.pch"; sourceTree = "<group>"; };
+		78704A87133C46B100E866FF /* glTestTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "glTestTests-Prefix.pch"; sourceTree = "<group>"; };
 		78704A88133C46B100E866FF /* glTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glTestTests.h; sourceTree = "<group>"; };
-		78704A8A133C46B100E866FF /* glTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = glTestTests.m; sourceTree = "<group>"; };
+		78704A8A133C46B100E866FF /* glTestTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = glTestTests.mm; sourceTree = "<group>"; };
+		78704A94133C79DD00E866FF /* graphicUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = graphicUtil.mm; sourceTree = "<group>"; };
+		78704A95133C79DD00E866FF /* graphicUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphicUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,16 +132,18 @@
 			isa = PBXGroup;
 			children = (
 				78704A63133C46AF00E866FF /* glTestAppDelegate.h */,
-				78704A64133C46AF00E866FF /* glTestAppDelegate.m */,
+				78704A64133C46AF00E866FF /* glTestAppDelegate.mm */,
 				78704A66133C46AF00E866FF /* MainWindow.xib */,
 				78704A69133C46B000E866FF /* Shader.fsh */,
 				78704A6B133C46B100E866FF /* Shader.vsh */,
 				78704A6D133C46B100E866FF /* EAGLView.h */,
-				78704A6E133C46B100E866FF /* EAGLView.m */,
+				78704A6E133C46B100E866FF /* EAGLView.mm */,
 				78704A70133C46B100E866FF /* glTestViewController.h */,
-				78704A71133C46B100E866FF /* glTestViewController.m */,
+				78704A71133C46B100E866FF /* glTestViewController.mm */,
 				78704A73133C46B100E866FF /* glTestViewController.xib */,
 				78704A5B133C46AF00E866FF /* Supporting Files */,
+				78704A94133C79DD00E866FF /* graphicUtil.mm */,
+				78704A95133C79DD00E866FF /* graphicUtil.h */,
 			);
 			path = glTest;
 			sourceTree = "<group>";
@@ -149,7 +154,7 @@
 				78704A5C133C46AF00E866FF /* glTest-Info.plist */,
 				78704A5D133C46AF00E866FF /* InfoPlist.strings */,
 				78704A60133C46AF00E866FF /* glTest-Prefix.pch */,
-				78704A61133C46AF00E866FF /* main.m */,
+				78704A61133C46AF00E866FF /* main.mm */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				78704A88133C46B100E866FF /* glTestTests.h */,
-				78704A8A133C46B100E866FF /* glTestTests.m */,
+				78704A8A133C46B100E866FF /* glTestTests.mm */,
 				78704A82133C46B100E866FF /* Supporting Files */,
 			);
 			path = glTestTests;
@@ -284,10 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78704A62133C46AF00E866FF /* main.m in Sources */,
-				78704A65133C46AF00E866FF /* glTestAppDelegate.m in Sources */,
-				78704A6F133C46B100E866FF /* EAGLView.m in Sources */,
-				78704A72133C46B100E866FF /* glTestViewController.m in Sources */,
+				78704A62133C46AF00E866FF /* main.mm in Sources */,
+				78704A65133C46AF00E866FF /* glTestAppDelegate.mm in Sources */,
+				78704A6F133C46B100E866FF /* EAGLView.mm in Sources */,
+				78704A72133C46B100E866FF /* glTestViewController.mm in Sources */,
+				78704A96133C79DD00E866FF /* graphicUtil.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78704A8B133C46B100E866FF /* glTestTests.m in Sources */,
+				78704A8B133C46B100E866FF /* glTestTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
