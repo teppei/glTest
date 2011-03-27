@@ -62,45 +62,45 @@
     }
 }
 
-- (void)createFramebuffer
-{
-    if (context && !defaultFramebuffer) {
-        [EAGLContext setCurrentContext:context];
-        
-        // Create default framebuffer object.
-        glGenFramebuffers(1, &defaultFramebuffer);
-        glBindFramebuffer(GL_FRAMEBUFFER, defaultFramebuffer);
-        
-        // Create color render buffer and allocate backing store.
-        glGenRenderbuffers(1, &colorRenderbuffer);
-        glBindRenderbuffer(GL_RENDERBUFFER, colorRenderbuffer);
-        [context renderbufferStorage:GL_RENDERBUFFER fromDrawable:(CAEAGLLayer *)self.layer];
-        glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &framebufferWidth);
-        glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &framebufferHeight);
-        
-        glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, colorRenderbuffer);
-        
-        if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
-            NSLog(@"Failed to make complete framebuffer object %x", glCheckFramebufferStatus(GL_FRAMEBUFFER));
-    }
-}
-
-- (void)deleteFramebuffer
-{
-    if (context) {
-        [EAGLContext setCurrentContext:context];
-        
-        if (defaultFramebuffer) {
-            glDeleteFramebuffers(1, &defaultFramebuffer);
-            defaultFramebuffer = 0;
-        }
-        
-        if (colorRenderbuffer) {
-            glDeleteRenderbuffers(1, &colorRenderbuffer);
-            colorRenderbuffer = 0;
-        }
-    }
-}
+//- (void)createFramebuffer
+//{
+//    if (context && !defaultFramebuffer) {
+//        [EAGLContext setCurrentContext:context];
+//        
+//        // Create default framebuffer object.
+//        glGenFramebuffers(1, &defaultFramebuffer);
+//        glBindFramebuffer(GL_FRAMEBUFFER, defaultFramebuffer);
+//        
+//        // Create color render buffer and allocate backing store.
+//        glGenRenderbuffers(1, &colorRenderbuffer);
+//        glBindRenderbuffer(GL_RENDERBUFFER, colorRenderbuffer);
+//        [context renderbufferStorage:GL_RENDERBUFFER fromDrawable:(CAEAGLLayer *)self.layer];
+//        glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &framebufferWidth);
+//        glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &framebufferHeight);
+//        
+//        glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, colorRenderbuffer);
+//        
+//        if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
+//            NSLog(@"Failed to make complete framebuffer object %x", glCheckFramebufferStatus(GL_FRAMEBUFFER));
+//    }
+//}
+//
+//- (void)deleteFramebuffer
+//{
+//    if (context) {
+//        [EAGLContext setCurrentContext:context];
+//        
+//        if (defaultFramebuffer) {
+//            glDeleteFramebuffers(1, &defaultFramebuffer);
+//            defaultFramebuffer = 0;
+//        }
+//        
+//        if (colorRenderbuffer) {
+//            glDeleteRenderbuffers(1, &colorRenderbuffer);
+//            colorRenderbuffer = 0;
+//        }
+//    }
+//}
 
 - (void)setFramebuffer
 {
@@ -110,7 +110,7 @@
         if (!defaultFramebuffer)
             [self createFramebuffer];
         
-        glBindFramebuffer(GL_FRAMEBUFFER, defaultFramebuffer);
+//        glBindFramebuffer(GL_FRAMEBUFFER, defaultFramebuffer);
         
         glViewport(0, 0, framebufferWidth, framebufferHeight);
     }
@@ -123,9 +123,9 @@
     if (context) {
         [EAGLContext setCurrentContext:context];
         
-        glBindRenderbuffer(GL_RENDERBUFFER, colorRenderbuffer);
+//        glBindRenderbuffer(GL_RENDERBUFFER, colorRenderbuffer);
         
-        success = [context presentRenderbuffer:GL_RENDERBUFFER];
+//        success = [context presentRenderbuffer:GL_RENDERBUFFER];
     }
     
     return success;
