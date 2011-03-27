@@ -131,6 +131,8 @@
 		78704A5A133C46AF00E866FF /* glTest */ = {
 			isa = PBXGroup;
 			children = (
+				78704A94133C79DD00E866FF /* graphicUtil.mm */,
+				78704A95133C79DD00E866FF /* graphicUtil.h */,
 				78704A63133C46AF00E866FF /* glTestAppDelegate.h */,
 				78704A64133C46AF00E866FF /* glTestAppDelegate.mm */,
 				78704A66133C46AF00E866FF /* MainWindow.xib */,
@@ -142,8 +144,6 @@
 				78704A71133C46B100E866FF /* glTestViewController.mm */,
 				78704A73133C46B100E866FF /* glTestViewController.xib */,
 				78704A5B133C46AF00E866FF /* Supporting Files */,
-				78704A94133C79DD00E866FF /* graphicUtil.mm */,
-				78704A95133C79DD00E866FF /* graphicUtil.h */,
 			);
 			path = glTest;
 			sourceTree = "<group>";
@@ -476,6 +476,7 @@
 				78704A90133C46B100E866FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78704A91133C46B100E866FF /* Build configuration list for PBXNativeTarget "glTestTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +485,7 @@
 				78704A93133C46B100E866FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

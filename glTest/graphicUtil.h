@@ -14,3 +14,4 @@ void drawSqure();
 void drawSqure(int red, int green, int blue, int alpha);
 void drawSqure(float x, float y, int red, int green, int blue, int alpha);
 void drawRectangle(float x, float y, float width, float height, int red, int green, int blue, int alpha);
+void drawCircle(float x, float y, int divides, float radius, int red, int green, int blue, int alpha);

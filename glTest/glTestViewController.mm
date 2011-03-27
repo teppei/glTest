@@ -175,6 +175,10 @@ enum {
                           0.4f, 0.4f, brightness, brightness, brightness, 255);
         }
     }
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    drawCircle(0.0f, 0.0f, 60, 1.0f, 0, 0, 255, 128);
+    glDisable(GL_BLEND);
 }
 
 - (void)drawFrame
